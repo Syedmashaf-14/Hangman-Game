@@ -1,11 +1,67 @@
 import random
 word_list = ["aardvark", "baboon", "camel"]
 print("Welcome To Hangman")
+stages = [r'''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========
+''', r'''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========
+''', r'''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
+''']
 word_to_guess = random.choice(word_list)  # determining the word
 word = list(word_to_guess)
 copy_word=list(word_to_guess)
 length_of_string = len(word_to_guess)
-no_of_lives = 4
+no_of_lives = 7
 user_guessed_word = ""
 track_of_guessed_word=[]
 result = False
@@ -33,6 +89,7 @@ while no_of_lives > 0 and copy_word != user_input:
         elif i == length_of_string - 1 and user_guessed_word != word[i]:
             no_of_lives -= 1
             print(f"The remaining lives: {no_of_lives}")
+            print(stages[no_of_lives])
 
 if result == True:
     print("Congratulation! You have guessed the word right")
