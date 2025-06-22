@@ -38,8 +38,9 @@ Copy
 Edit
 python hangman.py
 ##  Sample Output
-![image](https://github.com/user-attachments/assets/d5a6d80f-9832-4469-b88d-58d721d02623)
-![image](https://github.com/user-attachments/assets/b660befb-2df1-4f09-b659-cff4374ec2d0)
+![image](https://github.com/user-attachments/assets/03049c47-e0f2-483e-8017-8b59d97a8e5f)
+![image](https://github.com/user-attachments/assets/d5f6350c-48d3-4bcc-b046-0291807e39f7)
+
 
 
 🤝 Contributing
